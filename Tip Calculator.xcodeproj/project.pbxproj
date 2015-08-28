@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833AB2801B90D7210074BAE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833AB27E1B90D7210074BAE7 /* LaunchScreen.xib */; };
 		83D3167B1B864D27004406AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3167A1B864D27004406AC /* AppDelegate.swift */; };
 		83D3167D1B864D27004406AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3167C1B864D27004406AC /* ViewController.swift */; };
 		83D316801B864D27004406AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D3167E1B864D27004406AC /* Main.storyboard */; };
 		83D316821B864D27004406AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D316811B864D27004406AC /* Images.xcassets */; };
-		83D316851B864D27004406AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83D316831B864D27004406AC /* LaunchScreen.xib */; };
 		83D316911B864D27004406AC /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D316901B864D27004406AC /* Tip_CalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833AB27F1B90D7210074BAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Tip Calculator/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
 		83D316751B864D27004406AC /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D316791B864D27004406AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D3167A1B864D27004406AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D3167C1B864D27004406AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83D3167F1B864D27004406AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83D316811B864D27004406AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		83D316841B864D27004406AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		83D3168A1B864D27004406AC /* Tip CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D3168F1B864D27004406AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D316901B864D27004406AC /* Tip_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorTests.swift; sourceTree = "<group>"; };
@@ -77,11 +77,11 @@
 		83D316771B864D27004406AC /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				833AB27E1B90D7210074BAE7 /* LaunchScreen.xib */,
 				83D3167A1B864D27004406AC /* AppDelegate.swift */,
 				83D3167C1B864D27004406AC /* ViewController.swift */,
 				83D3167E1B864D27004406AC /* Main.storyboard */,
 				83D316811B864D27004406AC /* Images.xcassets */,
-				83D316831B864D27004406AC /* LaunchScreen.xib */,
 				83D316781B864D27004406AC /* Supporting Files */,
 			);
 			path = "Tip Calculator";
@@ -193,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D316801B864D27004406AC /* Main.storyboard in Resources */,
-				83D316851B864D27004406AC /* LaunchScreen.xib in Resources */,
+				833AB2801B90D7210074BAE7 /* LaunchScreen.xib in Resources */,
 				83D316821B864D27004406AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,20 +236,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		833AB27E1B90D7210074BAE7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				833AB27F1B90D7210074BAE7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		83D3167E1B864D27004406AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83D3167F1B864D27004406AC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		83D316831B864D27004406AC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83D316841B864D27004406AC /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             // This causes first view to fade in and second view to fade out
             self.firstView.alpha = 1
             self.secondView.alpha = 0
-        })
+                   })
         
         }
 
@@ -58,13 +58,13 @@ class ViewController: UIViewController {
         UIView.animateWithDuration(0.2, delay: 0.1, options: .CurveEaseOut, animations: {
             var billFieldFrame = self.billField.frame
             billFieldFrame.origin.y = 150
-
+            
             
             self.billField.frame = billFieldFrame
             }, completion: { finished in
                 println("Moved the Bill Field First!")
         })
-        
+
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
