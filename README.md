@@ -1,6 +1,6 @@
 # Tip-Calculator
 Codepath Practice Exercise
-Hours: 15
+Hours: 17
 
 This is an iOS application for calculting the tip and full amount you need to pay. Unlike other tip applications, this tip application assumes that you do not want to tip on the taxes that you've paid.
 
@@ -14,6 +14,8 @@ OPTIONAL STORIES
 * [x] User can toggle whether or not the SF Healthy taxes are included in the total amount.
 * [x] Nicer user experiecnce on startup where all the extra information is stripped away and user just types amount.
 * [x] Information and controls fade in once user starts typing.
+* [x] add an app icon
+* [x] added a descriptive launch screen
 
 WALKTHROUGH
 
@@ -22,8 +24,8 @@ WALKTHROUGH
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 FUTURE STORIES
-* [ ] add an app icon
-* [ ] add a splash screen
+
+* [ ] add a splash screen using an image
 * [ ] User can decide if they want to just enter a subtotal before taxes.
 
 NOTES
