@@ -60,21 +60,21 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SF 4% Health Surcharge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vgh-cw-9qc">
-                                        <rect key="frame" x="8" y="214" width="191" height="21"/>
+                                        <rect key="frame" x="8" y="270" width="191" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amt Before Tax: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yad-Bf-IS2">
-                                        <rect key="frame" x="8" y="178" width="191" height="21"/>
+                                        <rect key="frame" x="8" y="234" width="191" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y6K-UX-5qk">
-                                        <rect key="frame" x="194" y="174" width="106" height="21"/>
+                                        <rect key="frame" x="194" y="230" width="106" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,14 +87,26 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="cdd-6c-3ol">
-                                        <rect key="frame" x="256" y="209" width="51" height="31"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" onImage="On" offImage="Off" id="cdd-6c-3ol">
+                                        <rect key="frame" x="256" y="265" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="onTintColor" red="0.10041748690000001" green="1" blue="0.30046025170000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ZdO-ae-kFf"/>
                                         </connections>
                                     </switch>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="uB3-da-MrE">
+                                        <rect key="frame" x="15" y="180" width="290" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Total has no Tax"/>
+                                            <segment title="Total has Tax"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.10041748690000001" green="1" blue="0.30046025170000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="FTx-bj-ULq"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.01500679578563777" green="0.65309343434343436" blue="0.35961576757588443" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -111,6 +123,7 @@
                         <outlet property="firstView" destination="2aC-Ta-UC1" id="cYG-xZ-4XY"/>
                         <outlet property="secondView" destination="C0I-AV-ceW" id="Mky-V8-T0m"/>
                         <outlet property="surchargeControl" destination="cdd-6c-3ol" id="zYC-G8-5wS"/>
+                        <outlet property="taxincludedControl" destination="uB3-da-MrE" id="fkd-fN-zeY"/>
                         <outlet property="tipControl" destination="JBn-Gh-JZb" id="Pnc-6U-PTK"/>
                         <outlet property="tipLabel" destination="otj-Uc-6jg" id="cme-Xn-chz"/>
                         <outlet property="totalLabel" destination="PcQ-r6-cXg" id="nMu-ah-FyM"/>
@@ -126,6 +139,10 @@
             <point key="canvasLocation" x="249" y="414"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Off" width="16" height="16"/>
+        <image name="On" width="16" height="16"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
