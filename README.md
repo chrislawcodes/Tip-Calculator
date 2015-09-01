@@ -16,6 +16,7 @@ OPTIONAL STORIES
 * [x] Information and controls fade in once user starts typing.
 * [x] add an app icon
 * [x] added a descriptive launch screen
+* [x] User can decide if they want to just enter a subtotal before taxes.
 
 WALKTHROUGH
 
@@ -26,7 +27,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 FUTURE STORIES
 
 * [ ] add a splash screen using an image
-* [ ] User can decide if they want to just enter a subtotal before taxes.
+
 
 NOTES
 Took a while to figure out the animations but VERY satisfying once I got it working!
